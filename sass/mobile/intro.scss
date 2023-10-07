@@ -1,0 +1,232 @@
+@import "../setting.scss";
+//start make introduction
+div.introduction {
+  width: 100%;
+  height: 957px;
+  display: flex;
+  background: linear-gradient(180deg, #6f7dfb 0%, #26308c 100%);
+  flex-flow: row wrap;
+  position: relative;
+  header {
+    width: 90%;
+    height: 60px;
+    margin: 48px auto;
+    display: flex;
+    div.logo {
+      margin-left: 5%;
+      width: auto;
+      color: #fff;
+      font-family: Raleway;
+      line-height: 60px;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 900;
+    }
+    //start make navigation menu
+    nav {
+      width: 100%;
+      height: inherit;
+      line-height: 40px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: end;
+      #show,
+      #close {
+        display: none;
+      }
+
+      #show:checked {
+        ~ ul {
+          direction: rtl;
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: center;
+          gap: 20px;
+          z-index: 3333;
+          position: absolute;
+          top: 0;
+          right: 0;
+          
+        }
+      }
+      label[for="close"] {
+        width:40px;
+        position: absolute;
+        top: 4%;
+        right: 5%;
+      }
+
+      ul {
+        list-style: none;
+        display: none;
+        width: 100vw;
+        height: 957px;
+        background-color: $bg-dark-black;
+
+        li {
+          width: max-content;
+          align-self: center;
+
+          a {
+            text-decoration: none;
+            color: #fff;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 200;
+            font-weight: 400;
+          }
+          button {
+            font-size: 16px;
+            font-family: Poppins;
+            font-weight: 700;
+            color: #fff;
+            border: unset;
+            padding: 12px 32px;
+            box-sizing: border-box;
+            border-radius: 24px;
+            background-color: $bg-orange;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  //end make navigation menu
+  //start make information
+  div.learn {
+    margin-left: 10%;
+    display: flex;
+    width: 100%;
+    height: 413px;
+    flex-flow: column wrap;
+
+    div:nth-of-type(1) {
+      margin-top: 50px;
+      width: 60.8%;
+      color: #fff;
+      font-family: Raleway;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 125%;
+    }
+    div.explain {
+      color: #fff;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 200;
+      line-height: 200%;
+      margin-top: 20px;
+    }
+
+    div.enrol {
+      margin-top: 30px;
+      width: 180px;
+      height: 60px;
+      padding: 16px 32px;
+      box-sizing: border-box;
+      border-radius: 24px;
+      background-color: $bg-orange;
+      display: flex;
+      flex-flow: row wrap;
+      a {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 700;
+        gap: 0px 5px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-self: center;
+        width: auto;
+        text-decoration: none;
+      }
+    }
+  }
+  //end make information
+  //start make enroled number container
+  div.info {
+    width: 45%;
+    height: 410px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: end;
+
+    div.student-active {
+      width: 182px;
+      height: 75px;
+      border-radius: 24px;
+      background-color: #fff;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      border-radius: 24px;
+      box-shadow: 8px 8px 1px $bg-purple;
+      span:nth-of-type(1) {
+        color: #023047;
+        font-family: Poppins;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 125%;
+      }
+      span:nth-of-type(2) {
+        color: #023047;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+      }
+    }
+    div.rate {
+      width: 160px;
+      height: 76px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+
+      div:nth-of-type(1) {
+        background-color: #ffff;
+        box-shadow: 6px 6px 1px $bg-purple;
+        width: 160px;
+        height: 76px;
+        border-radius: 24px;
+        display: flex;
+        flex-flow: row-reverse wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5px;
+        span:nth-of-type(1) {
+          color: #023047;
+          font-family: Poppins;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 125%;
+        }
+        span:nth-of-type(2) {
+          color: #023047;
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 125%;
+        }
+      }
+    }
+  }
+  //end make enroled number container
+  // woman big pictur
+  .women-picture {
+    display: none;
+  }
+  div.women-mobile {
+    width: 55%;
+  }
+}
+// end woman big picture
+
+//start make introduction

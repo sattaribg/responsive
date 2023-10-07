@@ -1,0 +1,19 @@
+$bg-orange:#DA722C;
+$bg-light-blue:#057ADA;
+$bg-wihte-smoke:#E8F7FB;
+$bg-light-black:#023047;
+$bg-dark-black:#070917;
+$bg-purple:#6F7DFB;
+$bg-background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+*{
+    margin: 0;
+    padding: 0; 
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Italic.ttf);
+}

@@ -1,0 +1,221 @@
+@import "../setting.scss";
+//start make introduction
+div.introduction {
+  width: 100%;
+  height: 1194px;
+  display: flex;
+  background: linear-gradient(180deg, #6f7dfb 0%, #26308c 100%);
+  flex-flow: row wrap;
+  header {
+    width: 90%;
+    height: 60px;
+    margin: 48px auto;
+    display: flex;
+    div.logo {
+      width: auto;
+      color: #fff;
+      font-family: Raleway;
+      line-height: 60px;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 900;
+    }
+    //start make navigation menu
+
+    nav {
+      width: 100%;
+      height: inherit;
+      line-height: 40px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: end;
+      img {
+        display: none;
+      }
+      #show,#close{
+        display: none;
+      }
+      ul {
+        width: 72%;
+        height: inherit;
+        list-style: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        gap: 30px;
+        li {
+          width: max-content;
+          align-self: center;
+
+          a {
+            text-decoration: none;
+            color: #fff;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 200;
+            font-weight: 400;
+          }
+          button {
+            font-size: 16px;
+            font-family: Poppins;
+            font-weight: 700;
+            color: #fff;
+            border: unset;
+            padding: 16px 32px;
+            box-sizing: border-box;
+            border-radius: 24px;
+            background-color: #023047;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  //end make navigation menu
+  //start make information
+  div.learn {
+    margin-left: 10%;
+    display: flex;
+    width: 72%;
+    height: 413px;
+    flex-flow: column wrap;
+
+    div:nth-of-type(1) {
+      margin-top: 50px;
+      width: 60.8%;
+      height: 130px;
+      color: #fff;
+      font-family: Raleway;
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 125%;
+    }
+    div.explain {
+      width: 457px;
+      height: 95px;
+      color: #fff;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 200;
+      line-height: 200%;
+      margin-top: 20px;
+      display: inline-flex;
+      flex-flow: column wrap;
+    }
+
+    div.enrol {
+      margin-top: 30px;
+      width: 180px;
+      height: 60px;
+      padding: 16px 32px;
+      box-sizing: border-box;
+      border-radius: 24px;
+      background-color: $bg-orange;
+      display: flex;
+      flex-flow: row wrap;
+      a {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 700;
+        gap: 0px 5px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-self: center;
+        width: auto;
+        text-decoration: none;
+      }
+    }
+  }
+  //end make information
+  //start make enroled number container
+  div.info {
+    width: 35%;
+    height: 610px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: end;
+    margin-left: 10px;
+    div.student-active {
+      width: 206px;
+      height: 90px;
+      border-radius: 24px;
+      background-color: #fff;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      border-radius: 24px;
+      box-shadow: 5px 10px 3px #26308c;
+      margin-right: 30px;
+      span:nth-of-type(1) {
+        color: #023047;
+        font-family: Poppins;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 125%;
+      }
+      span:nth-of-type(2) {
+        color: #023047;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+      }
+    }
+    div.rate {
+      width: 100%;
+      height: 90px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+
+      div:nth-of-type(1) {
+        background-color: #ffff;
+        box-shadow: 3px 15px 3px #26308c;
+        width: 180px;
+        height: 90px;
+        border-radius: 24px;
+        display: flex;
+        flex-flow: row-reverse wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5px;
+        span:nth-of-type(1) {
+          color: #023047;
+          font-family: Poppins;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 125%;
+        }
+        span:nth-of-type(2) {
+          color: #023047;
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 125%;
+        }
+      }
+    }
+  }
+  //end make enroled number container
+  // woman big pictur
+  .women-mobile{
+    display: none;
+  }
+  div.women-picture {
+    width: 55%;
+    display: flex;
+    flex-flow: row wrap;
+    height: 613px;
+  }
+}
+// end woman big picture
+
+//start make introduction

@@ -1,0 +1,140 @@
+@import "../setting.scss";
+//start make comment commiunity
+div.comment {
+  width: 100%;
+  height: 992px;
+  display: flex;
+  flex-flow: column-reverse wrap;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  div.opinion {
+    margin-left: 5%;
+    width: 95%;
+    height: 685px;
+    position: relative;
+
+    div.comment-one,
+    .comment-two {
+      width: 80%;
+      height: 202px;
+      box-shadow: 0px 9px 36px 0px rgba(0, 0, 0, 0.2);
+      margin-bottom: 50px;
+      border-radius: 24px;
+      position: absolute;
+      background-color: #fff;
+      top: 5%;
+      left: 0;
+
+      div.top {
+        color: #fff;
+        font-family: Raleway;
+        font-size: 18px;
+        font-weight: 700;
+        width: 100%;
+        height: 102px;
+        border-radius: 24px;
+        line-height: 30px;
+        padding: 24px 32px;
+        box-sizing: border-box;
+        background-color: $bg-purple;
+      }
+      div.bottom {
+        width: 100%;
+        height: 120px;
+        display: flex;
+        align-items: center;
+
+        div {
+          width: 100%;
+          height: 80px;
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: center;
+          align-content: space-evenly;
+          span:nth-of-type(1) {
+            color: #023047;
+            font-family: Raleway;
+            font-size: 18px;
+            font-weight: 900;
+            margin-bottom: 8px;
+          }
+          span:nth-of-type(2) {
+            color: #023047;
+            font-family: Raleway;
+            font-size: 14px;
+          }
+        }
+        div.image-comment {
+          width: 80%;
+          height: auto;
+          display: flex;
+          flex-flow: row wrap;
+          padding: 0 32px;
+          justify-content: end;
+          margin-top: -33px;
+        }
+      }
+    }
+    div.comment-two {
+      top: 38%;
+      height: 190px;
+      div.top {
+        width: 100%;
+        height: auto;
+        background-color: $bg-orange;
+      }
+    }
+    div.line {
+      width: 28px;
+      height: 484px;
+      border-radius: 24px;
+      background-color: $bg-light-black;
+      position: relative;
+      left: 10%;
+    }
+  }
+  //end comment commiunity
+  //start what our student say
+  div.learn-more {
+    text-align: justify;
+    margin-left:5%;
+    width: 85%;
+    height: 250px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    row-gap: 15px;
+
+    p {
+      color: #023047;
+      font-family: Raleway;
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 120%;
+    }
+    div {
+      color: #023047;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    a {
+      color: #fff;
+      font-family: Poppins;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      text-transform: capitalize;
+      width: fit-content;
+      padding: 12px 32px;
+      box-sizing: border-box;
+      border-radius: 24px;
+      background: $bg-orange;
+      position: absolute;
+      bottom: 7%;
+      right: 13%;
+    }
+  }
+}
+//start what our student say

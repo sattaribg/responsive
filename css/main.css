@@ -1,0 +1,22 @@
+@import "./setting.css";
+/*start desktop size */
+@import "desktop/intro.css" only screen and (min-width:1366px);
+@import "./desktop/student.css" only screen and (min-width:1366px);
+@import "./desktop/our-courses.css" only screen and (min-width:1366px);
+@import "./desktop/get-app.css" only screen and (min-width:1366px);
+@import "./desktop/footer.css" only screen and (min-width:1366px);
+/*end desktop size */
+/*start tablet size */
+@import "./tablet/intro.css" only screen and (min-width:834px) and (max-width:1366px);
+@import "./tablet/student.css" only screen and (min-width:834px) and (max-width:1366px);
+@import "./tablet/our-courses.css" only screen and (min-width:834px) and (max-width:1366px);
+@import "./tablet/get-app.css" only screen and (min-width:834px) and (max-width:1366px);
+@import "./tablet/footer.css" only screen and (min-width:834px) and (max-width:1366px);
+/*end tablet size */
+/*start mobile size */
+@import "./mobile/intro.css" only screen and (min-width:415px) and (max-width:834px);
+@import "./mobile/student.css" only screen and (min-width:415px) and (max-width:834px);
+@import "./mobile/our-courses.css" only screen and (min-width:415px) and (max-width:834px);
+@import "./mobile/get-app.css" only screen and (min-width:415px) and (max-width:834px);
+@import "./mobile/footer.css" only screen and (min-width:415px) and (max-width:834px);
+/*end mobile size */

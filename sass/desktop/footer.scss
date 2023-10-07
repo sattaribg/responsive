@@ -1,0 +1,88 @@
+@import "../setting.scss";
+footer {
+  width: 100%;
+  height: 409px;
+  background-color: $bg-dark-black;
+  div.footer {
+    margin-left: 5%;
+    gap: 0px 20%;
+    width: 95%;
+    height: 350px;
+    display: flex;
+    flex-flow: row wrap;
+
+    div.links,
+    div.courses,
+    div.contact {
+      display: inline-flex;
+      margin-top: 50px;
+      gap: 25px 0px;
+      flex-flow: column wrap;
+      justify-content: center;
+      a {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 200%;
+        text-decoration: none;
+      }
+      a.title,
+      a.title-2 {
+        transform: translateX(-20px);
+        color: $bg-orange;
+        text-decoration: none;
+        font-family: Poppins;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      a.title-2 {
+        transform: translateY(-10px);
+      }
+    }
+    div.contact {
+      a {
+        width: fit-content;
+      }
+      div {
+        display: flex;
+        gap: 25px;
+      }
+      label {
+        position: relative;
+        input[type="email"] {
+          width: 511px;
+          height: 39px;
+          padding: 0px 10px;
+          border-radius: 8px;
+          border: none;
+        }
+
+        button[type="submit"] {
+          width: 135px;
+          height: 32px;
+          border-radius: 8px;
+          background-color: $bg-light-black;
+          position: absolute;
+          right: 5px;
+          top: 5px;
+          color: #fff;
+          font-family: Poppins;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 200%;
+        }
+      }
+    }
+    div.credit {
+      margin-top: 32px;
+      color: #fff;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 200%;
+    }
+  }
+}
